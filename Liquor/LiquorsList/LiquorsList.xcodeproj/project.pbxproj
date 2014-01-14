@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13A6C61A18606731008593BC /* newSamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A6C61918606730008593BC /* newSamp.m */; };
+		13A8B70F185ED55800757CB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A8B70E185ED55800757CB8 /* UIKit.framework */; };
+		13A8B711185ED55800757CB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A8B710185ED55800757CB8 /* Foundation.framework */; };
+		13A8B713185ED55800757CB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A8B712185ED55800757CB8 /* CoreGraphics.framework */; };
+		13A8B719185ED55800757CB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13A8B717185ED55800757CB8 /* InfoPlist.strings */; };
+		13A8B71B185ED55800757CB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A8B71A185ED55800757CB8 /* main.m */; };
+		13A8B71F185ED55800757CB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A8B71E185ED55800757CB8 /* AppDelegate.m */; };
+		13A8B721185ED55800757CB8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A8B720185ED55800757CB8 /* Default.png */; };
+		13A8B723185ED55800757CB8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A8B722185ED55800757CB8 /* Default@2x.png */; };
+		13A8B725185ED55800757CB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A8B724185ED55800757CB8 /* Default-568h@2x.png */; };
+		13A8B728185ED55800757CB8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A8B726185ED55800757CB8 /* MainStoryboard.storyboard */; };
+		13A8B72B185ED55800757CB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A8B72A185ED55800757CB8 /* ViewController.m */; };
+		13A8B736185ED5E200757CB8 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A8B735185ED5E200757CB8 /* libsqlite3.0.dylib */; };
+		13A8B738185ED67A00757CB8 /* dbLiquors.db in Resources */ = {isa = PBXBuildFile; fileRef = 13A8B737185ED67A00757CB8 /* dbLiquors.db */; };
+		13A8B777185EE67600757CB8 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A8B776185EE67600757CB8 /* DBManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13A6C61818606730008593BC /* newSamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newSamp.h; sourceTree = "<group>"; };
+		13A6C61918606730008593BC /* newSamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newSamp.m; sourceTree = "<group>"; };
+		13A8B70B185ED55800757CB8 /* LiquorsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquorsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A8B70E185ED55800757CB8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		13A8B710185ED55800757CB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		13A8B712185ED55800757CB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		13A8B716185ED55800757CB8 /* LiquorsList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiquorsList-Info.plist"; sourceTree = "<group>"; };
+		13A8B718185ED55800757CB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13A8B71A185ED55800757CB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13A8B71C185ED55800757CB8 /* LiquorsList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiquorsList-Prefix.pch"; sourceTree = "<group>"; };
+		13A8B71D185ED55800757CB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13A8B71E185ED55800757CB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13A8B720185ED55800757CB8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		13A8B722185ED55800757CB8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		13A8B724185ED55800757CB8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		13A8B727185ED55800757CB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		13A8B729185ED55800757CB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		13A8B72A185ED55800757CB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		13A8B735185ED5E200757CB8 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		13A8B737185ED67A00757CB8 /* dbLiquors.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = dbLiquors.db; sourceTree = "<group>"; };
+		13A8B775185EE67600757CB8 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		13A8B776185EE67600757CB8 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13A8B708185ED55800757CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A8B736185ED5E200757CB8 /* libsqlite3.0.dylib in Frameworks */,
+				13A8B70F185ED55800757CB8 /* UIKit.framework in Frameworks */,
+				13A8B711185ED55800757CB8 /* Foundation.framework in Frameworks */,
+				13A8B713185ED55800757CB8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13A8B702185ED55800757CB8 = {
+			isa = PBXGroup;
+			children = (
+				13A8B735185ED5E200757CB8 /* libsqlite3.0.dylib */,
+				13A8B714185ED55800757CB8 /* LiquorsList */,
+				13A8B70D185ED55800757CB8 /* Frameworks */,
+				13A8B70C185ED55800757CB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13A8B70C185ED55800757CB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13A8B70B185ED55800757CB8 /* LiquorsList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13A8B70D185ED55800757CB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13A8B70E185ED55800757CB8 /* UIKit.framework */,
+				13A8B710185ED55800757CB8 /* Foundation.framework */,
+				13A8B712185ED55800757CB8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13A8B714185ED55800757CB8 /* LiquorsList */ = {
+			isa = PBXGroup;
+			children = (
+				13A8B71D185ED55800757CB8 /* AppDelegate.h */,
+				13A8B71E185ED55800757CB8 /* AppDelegate.m */,
+				13A8B737185ED67A00757CB8 /* dbLiquors.db */,
+				13A8B726185ED55800757CB8 /* MainStoryboard.storyboard */,
+				13A8B729185ED55800757CB8 /* ViewController.h */,
+				13A8B72A185ED55800757CB8 /* ViewController.m */,
+				13A8B775185EE67600757CB8 /* DBManager.h */,
+				13A8B776185EE67600757CB8 /* DBManager.m */,
+				13A6C61818606730008593BC /* newSamp.h */,
+				13A6C61918606730008593BC /* newSamp.m */,
+				13A8B715185ED55800757CB8 /* Supporting Files */,
+			);
+			path = LiquorsList;
+			sourceTree = "<group>";
+		};
+		13A8B715185ED55800757CB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13A8B716185ED55800757CB8 /* LiquorsList-Info.plist */,
+				13A8B717185ED55800757CB8 /* InfoPlist.strings */,
+				13A8B71A185ED55800757CB8 /* main.m */,
+				13A8B71C185ED55800757CB8 /* LiquorsList-Prefix.pch */,
+				13A8B720185ED55800757CB8 /* Default.png */,
+				13A8B722185ED55800757CB8 /* Default@2x.png */,
+				13A8B724185ED55800757CB8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13A8B70A185ED55800757CB8 /* LiquorsList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A8B72E185ED55800757CB8 /* Build configuration list for PBXNativeTarget "LiquorsList" */;
+			buildPhases = (
+				13A8B707185ED55800757CB8 /* Sources */,
+				13A8B708185ED55800757CB8 /* Frameworks */,
+				13A8B709185ED55800757CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiquorsList;
+			productName = LiquorsList;
+			productReference = 13A8B70B185ED55800757CB8 /* LiquorsList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13A8B703185ED55800757CB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "TWILIGHT SOFTWARES";
+			};
+			buildConfigurationList = 13A8B706185ED55800757CB8 /* Build configuration list for PBXProject "LiquorsList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13A8B702185ED55800757CB8;
+			productRefGroup = 13A8B70C185ED55800757CB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13A8B70A185ED55800757CB8 /* LiquorsList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13A8B709185ED55800757CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A8B719185ED55800757CB8 /* InfoPlist.strings in Resources */,
+				13A8B721185ED55800757CB8 /* Default.png in Resources */,
+				13A8B723185ED55800757CB8 /* Default@2x.png in Resources */,
+				13A8B725185ED55800757CB8 /* Default-568h@2x.png in Resources */,
+				13A8B728185ED55800757CB8 /* MainStoryboard.storyboard in Resources */,
+				13A8B738185ED67A00757CB8 /* dbLiquors.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13A8B707185ED55800757CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A8B71B185ED55800757CB8 /* main.m in Sources */,
+				13A8B71F185ED55800757CB8 /* AppDelegate.m in Sources */,
+				13A8B72B185ED55800757CB8 /* ViewController.m in Sources */,
+				13A8B777185EE67600757CB8 /* DBManager.m in Sources */,
+				13A6C61A18606731008593BC /* newSamp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13A8B717185ED55800757CB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13A8B718185ED55800757CB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		13A8B726185ED55800757CB8 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13A8B727185ED55800757CB8 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13A8B72C185ED55800757CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		13A8B72D185ED55800757CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13A8B72F185ED55800757CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiquorsList/LiquorsList-Prefix.pch";
+				INFOPLIST_FILE = "LiquorsList/LiquorsList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		13A8B730185ED55800757CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiquorsList/LiquorsList-Prefix.pch";
+				INFOPLIST_FILE = "LiquorsList/LiquorsList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13A8B706185ED55800757CB8 /* Build configuration list for PBXProject "LiquorsList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A8B72C185ED55800757CB8 /* Debug */,
+				13A8B72D185ED55800757CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A8B72E185ED55800757CB8 /* Build configuration list for PBXNativeTarget "LiquorsList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A8B72F185ED55800757CB8 /* Debug */,
+				13A8B730185ED55800757CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13A8B703185ED55800757CB8 /* Project object */;
+}
