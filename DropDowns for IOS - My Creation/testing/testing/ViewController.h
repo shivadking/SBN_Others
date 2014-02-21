@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 - (IBAction)btnPost:(id)sender;
 - (IBAction)btnGet:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *txtDropDown;

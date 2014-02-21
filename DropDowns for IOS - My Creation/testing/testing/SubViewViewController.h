@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SubViewViewController : UIViewController<UITableViewDelegate>
 {
-    NSMutableArray *loadData;
+    NSMutableArray *loadData, *searchData;
 }
 @property (weak) id parentController;
 @property (strong, nonatomic) IBOutlet UITableView *subTableView;
-
+-(void) textChangeDelegate:(NSString*) searchText;
 @end

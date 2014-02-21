@@ -33,12 +33,19 @@ NSString *const BaseURLString = @"http://192.168.0.127:92/api/LoginApi/";
     [_txtDropDown addGestureRecognizer:tapGesture];
     
     
-    tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touched2)];
-    [_txtDropDown2 addGestureRecognizer:tapGesture];
+    [_txtDropDown2 addTarget:self action:@selector(txtfieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+    
+    /*tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touched2)];
+    [_txtDropDown2 addGestureRecognizer:tapGesture];*/
     
     //[_txtDropDown addTarget:self action:@selector(touched) forControlEvents:UIControlEventEditingDidBegin];
     
 
+}
+
+-(void) txtfieldDidChange:(UITextField*) txt
+{
+    [viewDropDown textChangeDelegate:txt.text];
 }
 
 -(void) touched
@@ -84,13 +91,18 @@ NSString *const BaseURLString = @"http://192.168.0.127:92/api/LoginApi/";
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    return NO;
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self touched2];
 }
 
 - (IBAction)btnPost:(id)sender {

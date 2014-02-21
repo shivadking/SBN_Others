@@ -30,6 +30,7 @@
 	// Do any additional setup after loading the view.
     
     loadData = [[NSMutableArray alloc] initWithObjects:@"1",@"2",@"3", nil];
+    searchData = loadData;
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +41,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [loadData count];
+    return [searchData count];
 }
 
 
@@ -54,7 +55,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = [loadData objectAtIndex:indexPath.row];
+    cell.textLabel.text = [searchData objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -67,10 +68,26 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ViewController *parent =(ViewController *)self.parentController;
-    parent.txtDropDown2.text = [loadData objectAtIndex:indexPath.row];
+    parent.txtDropDown2.text = [searchData objectAtIndex:indexPath.row];
     
     [self.view removeFromSuperview];
     //[parent removeViews2];
+}
+
+-(void) textChangeDelegate:(NSString*) searchText
+{
+    NSLog(@"sdafas");
+    searchData = [[NSMutableArray alloc] init];
+    for(NSString *s in loadData)
+    {
+        if([[s lowercaseString] rangeOfString:searchText].location != NSNotFound)
+            [searchData addObject:s];
+    }
+    if([searchText length] == 0)
+    {
+        searchData = loadData;
+    }
+    [_subTableView reloadData];
 }
 
 @end
